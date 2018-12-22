@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MonProjetSpring_6_SpringBootHello" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MonProjetHibernate0HelloWorld" target="1.8" />
+      <module name="MonProjetHibernate1CRUD" target="1.8" />
+      <module name="MonProjetHibernate2Associations" target="8" />
+      <module name="MonProjetHibernate3Inheritence" target="1.7" />
+      <module name="MonProjetHibernate4HQL_Criteria" target="1.7" />
+      <module name="MonProjetHibernate_0_HelloWorld" target="1.7" />
+      <module name="MonProjetHibernate_1_JPA_HelloWorld" target="1.8" />
+      <module name="MonProjetHibernate_2_CRUD" target="1.8" />
+      <module name="MonProjetHibernate_3_Associations" target="1.8" />
+      <module name="MonProjetHibernate_3_Associations_ManyToMany" target="1.8" />
+      <module name="MonProjetHibernate_3_Associations_OneToMany" target="1.8" />
+      <module name="MonProjetHibernate_3_Associations_OneToOne" target="1.8" />
+      <module name="MonProjetHibernate_4_Inheritence" target="1.8" />
+      <module name="MonProjetHibernate_5_JPQL_Criteria" target="1.8" />
+      <module name="MonProjetHibernate_6_Caching" target="1.8" />
+      <module name="MonProjetHibernate_7_Fetch_Strategies_Annotations" target="1.8" />
+      <module name="MonProjetHibernate_7_Fetch_Strategies_JPQL" target="1.8" />
+      <module name="MonProjetRappelsEvolutionsSyntaxiquesJava" target="8" />
+      <module name="MonProjetSpring_1_Dependency_Injection" target="1.8" />
+      <module name="MonProjetSpring_2_Layering_XML" target="1.8" />
+      <module name="MonProjetSpring_3_Annotations" target="1.8" />
+      <module name="MonProjetSpring_4_JavaConfig" target="1.8" />
+      <module name="MonProjetSpring_5_AtBean" target="1.8" />
+      <module name="MonProjetSpring_6_SpringBootHello" target="1.8" />
+      <module name="MonProjetSpring_7_AtBeanExample_Bootified" target="1.8" />
+      <module name="MonProjetSpring_8_AOP" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

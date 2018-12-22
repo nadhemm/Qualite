@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+
+	<bean id="product0" class="tn.insat.domain.Product" scope="singleton">
+		<!-- Setter injection -->
+		<property name="productId" value="P1000"></property>
+		<property name="name" value="Thé"></property>
+		<property name="unitPrice" value="4.5"></property>
+	</bean>
+	<bean id="product1" class="tn.insat.domain.Product"  >
+		<!-- Constructor Injection -->
+		<constructor-arg name="productId" value="P2000"></constructor-arg>
+		<constructor-arg name="name" value="Café"></constructor-arg>
+		<constructor-arg name="unitPrice" value="5.5"></constructor-arg>
+	</bean>
+	
+	<util:list id="produits">
+	   <ref bean="product0"/>
+	   <ref bean="product1"/>	
+	</util:list>
+	 
+	<bean id="order1" class="tn.insat.domain.Order">
+	   <property name="orderId" value="order0"></property>
+	   <!--<property name="date" value="2018-10-01"></property>-->
+	   <property name="products" ref="produits"></property>
+	</bean>
+
+</beans>

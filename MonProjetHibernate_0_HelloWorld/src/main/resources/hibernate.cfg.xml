@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/BanqueDB</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">password</property>
+
+        <property name="hibernate.hbm2ddl.auto">update </property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <mapping class="tn.insat.domain.Compte"/>
+
+        <!--
+           hibernate.hbm2ddl.auto property the list of possible options is:
+                validate: validate that the schema matches, make no changes to the schema of the database, you probably want this for production.
+                update: update the schema to reflect the entities being persisted
+                create: creates the schema necessary for your entities, destroying any previous data.
+                create-drop: create the schema as in create above, but also drop the schema at the end of the session. This is great in early development or for testing.
+        -->
+
+    </session-factory>
+</hibernate-configuration>
